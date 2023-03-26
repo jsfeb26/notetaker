@@ -26,6 +26,7 @@ export const NoteCard = ({
         >
           <div className="collapse-title text-xl font-bold">{note.title}</div>
           <div className="collapse-content">
+            {/* prose is what brings in the typography from tailwindcss */}
             <article className="prose lg:prose-xl">
               <ReactMarkdown>{note.content}</ReactMarkdown>
             </article>
